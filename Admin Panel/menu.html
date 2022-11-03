@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head><title>ApplicantSol</title>
+<body bgcolor="skyblue">
+
+ 
+<br><h1><i><font color="darkblue"> Admin Panel </i></h1></font>
+
+
+
+<br><a  href="Admin/Product Insert/Product Insert.html"style="text-decoration:None;" Target="iframe_ap"><font color="darkblue"> Insert Photo Gallery  </a><br>
+<br><a  href="Admin\Staff Insert\Staff Insert.html"style="text-decoration:None;" Target="iframe_ap"><font color="darkblue"> Insert Staff</a><br>
+<br><a  href="Admin\Fee Structure Insert\Fee Structure Insert.html"style="text-decoration:None;" Target="iframe_ap"><font color="darkblue"> Fee Structure</a><br>
+
+
+
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript1.2">
+var ns = (document.layers)? true:false;
+var ie = (document.all)? true:false;
+if (ns) document.captureEvents(Event.MOUSEDOWN || Event.CLICK);
+document.onclick = sourcecodeprotect;
+document.onmousedown = sourcecodeprotect;
+
+// ***********************************************************
+function sourcecodeprotect(e) {
+  if (ns&&(e.which==3)) return false;
+  else if (ie&&(window.event.button==2)) alert("Source code protected");
+  else return true;
+  }
+
+//***********************************************************
+function cleanup() {
+  if (ns) document.releaseEvents(Event.MOUSEDOWN || Event.CLICK);
+  }
+
+</SCRIPT>
+</HEAD>
+<BODY onunload="cleanup()">
+</BODY>
+
+
+<HEAD>
+<script language="javascript">
+ function click(e) {
+  if (navigator.appName == 'Netscape'
+           && e.which == 3) {
+      alert("no right click please")
+      return false;
+      }
+   else {
+      if (navigator.appName == 'Microsoft Internet Explorer'
+          && event.button==2)
+         alert("no right click please")
+         return false;
+         }
+   return true;
+ }
+document.onmousedown=click
+</script>
+</HEAD>
+<BODY>
+</BODY></HTML>

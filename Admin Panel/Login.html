@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<title>Applicant.Sol</title>
+<html>
+<head>
+<title>Applicant.Sol</title>
+<link type="text/css" rel="stylesheet" href="security.css"/>
+</head>
+ <body scroll="no"><br><br><br>
+<fieldset style="border:1px solid black;">
+
+ <b>Admin Login</b>
+
+<form name="Login">
+
+<font size="3" color="black"><b><i>Admin Name&nbsp;&nbsp;&nbsp;<input type="text" size="20" name="userid"/>&nbsp;<b> Password&nbsp; &nbsp;&nbsp;<input type="password" size="20" name="pswrd"/>
+<input type="button" onclick="check(this.form)" value=" Login " /> <input type="reset" value=" Clear "/>&nbsp;
+</form>
+ <script language="javascript"> function check(form) { /*function to check userid & password*/ /*the following code checkes whether the entered userid and password are matching*/ if(form.userid.value == "u" && form.pswrd.value == "p") { window.open('Transaction.html')/*opens the target page while Id & password matches*/ } else { alert("Error Password or Username")/*displays error message*/ } } 
+</script></body></html>
+</fieldset>
+</div>
+</form>
+</body> 
+</html>
